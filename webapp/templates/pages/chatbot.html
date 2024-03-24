@@ -1,0 +1,96 @@
+        {% extends 'pages/index.html' %}
+        {% block content%}
+        {% load static %}
+      
+<body>
+          <!-- PA HELP, SALAMAT-->
+        <section class="layout">
+            <nav class="sidebar">
+              <header>
+                <div class="image-text">
+                    <img src="{% static 'images/stingblack7.png'%}" alt="logo"  />
+                  <div class="text header-text">
+                    <span class="main">STING</span>
+                    <span class="sub">CVSU Bacoor</span>
+                  </div>
+                </div>
+                <i class="sisi bx bx-chevron-right toggle"></i>
+              </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+           
+            <li class="nav-link">
+              <a href="">
+                <i class="bx bx-home-alt icons"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="">
+               <i class="bx bx-pie-chart-alt icons"></i>
+                <span class="text nav-text">Blog</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="">
+                <i class="bx bx-bell icons"></i>
+                <span class="text nav-text">Explore</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-heart icons"></i>
+                <span class="text nav-text">Edit Profile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text" style="position: absolute; left: 60;">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+          <div class="body">
+       
+        <h1 class="display-5 text-center"> - Sting -</h1>
+        <div id="chatbott">
+        <p class="botText" style="margin-right: auto; margin-left: auto;">
+        <img src="{% static 'images/stingcya2.png' %}" class="chat_logo" alt="" width="50" height="40" style="border-radius: 50%;">Hi, I'm Sting, How can i assist?
+        </p>
+        </div>
+      
+                  <div id="message-form">
+                      <div class="message-wrapper">
+                            <textarea id="messageInput" name="userMessage" rows="1" placeholder="Send a message"></textarea>
+                            <button id="sendInput" class="sendInput" onclick="typeWriter()"><i class="fa fa-paper-plane"><img src="{% static '/images/stingblack5.png'%}" width="60" height="60"></i></button>
+                      </div>
+                  <div class="disclaimer">This is Sting for personal use and educational purposes only.</div>
+
+                  </div>
+            </div>
+          </div>
+        </section>
+</body>
+
+{% endblock%}
+
+
+
+ 
